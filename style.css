@@ -66,3 +66,56 @@ nav > span > a > img:hover{
 
 /*Corpo*/
 
+main {
+  display: flex;
+  justify-content: space-between; /* separa as sections */
+  align-items: center;            /* alinha verticalmente */
+  gap: 20px;                      /* espaço entre elas */
+}
+
+.copy{
+    flex: 1;
+    height: 86vh;
+    margin-top: 20px;
+    font-family: sans-serif;
+
+}
+
+.copy > div{
+    width:35%;
+    height: 55%;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+
+.copy > div > h1{
+    color: black;
+    font-size: 4em;
+}
+
+.copy > p{
+    background-color: var(--vermelho-escuro);
+    position: absolute;
+    top: 87%;
+    margin-left: 150px;
+}
+
+.img-chamativa{
+    background-image: url(images/empada-inicio.png);
+    border-radius: 10px;
+    border: 3px solid black;
+    flex: 1;
+    height: 86vh;
+    margin-top: 20px;
+    margin-right: 50px;
+
+}
+
+.img-chamativa img {
+  max-width: 100%; /* imagem não estoura a section */
+  height: auto;
+  display: block;
+}
