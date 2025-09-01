@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root{
     --amarelo: #F2D43D; /*Terceira*/
     --laranja: #F2A03D; /*primeiro*/
@@ -21,7 +23,7 @@ body{
 header{
     background: linear-gradient(135deg, var(--laranja) 80%, var(--amarelo) 100%);
     width: 100%;
-    height: 7vh;
+    height: 9vh;
     display: flex;              /* ativa flexbox */
     justify-content: center;    /* centraliza horizontalmente */
     align-items: center;        /* centraliza verticalmente */
@@ -39,7 +41,7 @@ nav{
 nav > span > a{
     font-weight:bolder;
     font-size: 1.5em;
-    font-family: sans-serif;
+    font-family: "Nunito", sans-serif;
     color: var(--branco);
     text-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.253);
     text-decoration: none;
@@ -77,18 +79,18 @@ main {
     flex: 1;
     height: 86vh;
     margin-top: 20px;
-    font-family: sans-serif;
-
+    font-family: "Nunito", sans-serif;
+    line-height: 5em;
 }
 
 .copy > div{
-    width:35%;
-    height: 55%;
+    width:45%;
+    height: 58%;
     padding: 10px;
     margin: auto;
     position: absolute;
-    top: 25%;
-    left: 7%;
+    top: 23%;
+    left: 4%;
 }
 
 .copy > div > h1{
@@ -96,8 +98,23 @@ main {
     font-size: 4em;
 }
 
+#festas-style{
+    font-size: 2em;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+#bares-style{
+    font-size: 1.5em;
+}
+
+#momentos-style{
+    font-size: 0.9em;
+    color: var(--vermelho-escuro);
+}
+
 .copy > p{
-    background-color: var(--vermelho-escuro);
+    line-height: 1.3em;
     position: absolute;
     top: 87%;
     margin-left: 150px;
@@ -106,9 +123,8 @@ main {
 .img-chamativa{
     background-image: url(images/empada-inicio.png);
     border-radius: 10px;
-    border: 3px solid black;
     flex: 1;
-    height: 86vh;
+    height: 70vh;
     margin-top: 20px;
     margin-right: 50px;
 
